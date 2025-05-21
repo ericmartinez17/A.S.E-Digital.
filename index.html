@@ -1,63 +1,130 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.S.E Digital</title>
-    
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A.S.E Digital</title>
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-    
-    <header>
-        <h1>A.S.E Digital</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#personajes">Personajes</a></li>
-                <li><a href="#historia">Historia</a></li>
-                <li><a href="#historia">Historia</a></li>
-                <li><a href="#historia">Historia</a></li>
-            </ul>
-        </nav>
-    </header>
+
+  <header>
+    <img src="logo.png" alt="Logotip A.S.E Digital" class="logo" />
+    <h1>A.S.E Digital</h1>
 
     
-    <section id="inicio">
-        <h2>A.S.E Digital</h2>
-        <p>A.S.E. dona un gir de 180 graus a l’ús tradicional del material informàtic a les escoles. Oferim un servei econòmic i, sobretot, molt rendible per a les escoles que volen treballar d’una manera més ordenada, senzilla i, sobretot, funcional. 
-            Comptem amb més de 20 anys d’experiència a la ciutat de Barcelona oferint serveis informàtics. Per això, ens esforcem a treballar per cobrir qualsevol necessitat, assessorant sempre sobre els últims avenços tecnològics. A més, el nostre objectiu és aconseguir estalvis importants en costos directes i indirectes. Finalment, la nostra gran diferència és oferir un import fix, garantint confiança i estabilitat per als nostres clients.
-        </p>
+    <select id="languageSwitcher">
+      <option value="ca">Català</option>
+      <option value="es">Castellano</option>
+      <option value="en">English</option>
+    </select>
+
+    <nav>
+      <a href="#qui-som" data-i18n="nav.about">Qui som</a>
+      <a href="#serveis" data-i18n="nav.services">Serveis</a>
+      <a href="#projectes" data-i18n="nav.projects">Projectes</a>
+      <a href="#opinions" data-i18n="nav.opinions">Opinions</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#blog" data-i18n="nav.blog">Blog</a>
+      <a href="#equip" data-i18n="nav.team">Equip</a>
+      <a href="#clients" data-i18n="nav.clients">Clients</a>
+      <a href="#ofertes" data-i18n="nav.offers">Ofertes</a>
+      <a href="#contacte" data-i18n="nav.contact">Contacte</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="qui-som">
+      <h2 data-i18n="section.about.title">Qui som</h2>
+      <p data-i18n="section.about.content">A.S.E. transforma l’ús de la tecnologia a les escoles amb serveis rendibles i eficients. Més de 20 anys d’experiència i un equip de +15 professionals a Barcelona donant suport a centres educatius.</p>
     </section>
 
-    
-    <section id="personajes">
-        <div class="personajes">
-            <h2>Personajes</h2>
-            <p>Conseguimos importantes ahorros en costes directos (horas de servicio, desplazamientos, etc) e indirectos (imagen corporativa, etc), pero sobretodo, mejoras en eficiencia.
-                Además, nuestra propuesta se diferencia claramente al establecer un importe fijo estipulado en el contrato, independientemente del tipo o alcance del servicio prestado.
-                
-                Además, nuestra garantía de calidad son los 20 años en el sector de la informática, sinónimo de calidad, solvencia y eficacia. Nos esforzamos día a día para ofrecer un servicio adaptado a las necesidades específicas de cada cliente, garantizando siempre soluciones rápidas y efectivas. Nuestro equipo de profesionales está comprometido en brindar asesoramiento personalizado en cada proyecto. Si está interesado en contactar con nosotros. No dude en ponerse en contacto con nosotros.</p>
-            <div class="personaje">
-                <h3>Atencion al cliente</h3>
-                <img src="goku.pdf" alt="Goku">
-                <p>Nuestro servicio técnico de preventa y postventa está diseñado para asesorarte y resolver tus dudas con profesionalismo y cercanía. Con un enfoque experto y cercano, buscamos generar confianza y prevenir futuros inconvenientes, asegurando una experiencia satisfactoria en todo momento.</p>
-            </div>
-            <div class="personaje">
-                <h3>Soporte de Marca</h3>
-                <img src="goku.pdf" alt="Goku">
-                <p>Estamos especializados en las marcas Apple, MSI, ASUS. Con nuestro servicio asegura un trabajo con rapidez, de calidad y por un buen precio.</p>
-            </div>
-            <div class="personaje">
-                <h3>El precio</h3>
-                <img src="vegeta.pdf" alt="Vegeta">
-                <p>El presupuesto es una clave fundamental para escoger un servicio técnico. Nosotros justificamos el coste, saber por qué paga y por lo que paga. Pero sobre todo, entender qué le pasa a su dispositivo y si necesita algún mantenimiento para ahorrar posibles sobresaltos futuros.</p>
-            </div>
-        </div>
+    <section id="serveis">
+      <h2 data-i18n="section.services.title">Serveis</h2>
+      <div class="serveis-container">
+        <ul>
+          <li data-i18n="section.services.item1">Atenció al client propera</li>
+          <li data-i18n="section.services.item2">Suport tècnic (Apple, MSI, ASUS…)</li>
+          <li data-i18n="section.services.item3">Reparacions i manteniment</li>
+          <li data-i18n="section.services.item4">Assessorament tecnològic</li>
+          <li data-i18n="section.services.item5">Pressupostos clars i detallats</li>
+        </ul>
+        <img src="serveis.png" alt="Il·lustració Serveis" class="serveis-img" />
+      </div>
     </section>
 
-    
-    <section id="historia">
-        <h2>Historia de Dragon Ball</h2>
-        <p>Dragon Ball comenzó como un manga creado por Akira Toriyama en 1984. La historia sigue a Goku y sus amigos en su búsqueda por las Esferas del Dragón. A lo largo de su aventura, Goku enfrenta a poderosos enemigos y se transforma en un guerrero legendario.</p>
+    <section id="projectes">
+      <h2 data-i18n="section.projects.title">Projectes d'èxit</h2>
+      <p data-i18n="section.projects.content">Hem col·laborat amb escoles de Barcelona com l'Escola X, l'Institut Y o el Col·legi Z. Cada projecte es personalitza segons les necessitats del centre.</p>
     </section>
+
+    <section id="opinions">
+      <h2 data-i18n="section.opinions.title">Opinions</h2>
+      <blockquote data-i18n="section.opinions.q1">“Un servei excel·lent, molt proper i eficient. Ens han ajudat moltíssim amb la gestió dels ordinadors.” – Marta R., directora d'escola</blockquote>
+      <blockquote data-i18n="section.opinions.q2">“Sempre hi són quan els necessitem. Confiança total.” – Jordi T., coordinador TIC</blockquote>
+    </section>
+
+    <section id="faq">
+      <h2 data-i18n="section.faq.title">Preguntes Freqüents</h2>
+      <ul>
+        <li data-i18n="section.faq.q1"><strong>Només treballeu amb escoles?</strong> No, també oferim serveis a empreses i institucions.</li>
+        <li data-i18n="section.faq.q2"><strong>El manteniment és mensual?</strong> Sí, però també oferim serveis puntuals.</li>
+        <li data-i18n="section.faq.q3"><strong>Feu pressupostos gratuïts?</strong> Sí, sempre sense compromís.</li>
+      </ul>
+    </section>
+
+    <section id="blog">
+      <h2 data-i18n="section.blog.title">Blog</h2>
+      <article>
+        <h3 data-i18n="section.blog.post1.title">5 consells per mantenir els equips informàtics a l’escola</h3>
+        <p data-i18n="section.blog.post1.content">Revisar regularment, actualitzar el programari, i més bones pràctiques.</p>
+      </article>
+      <article>
+        <h3 data-i18n="section.blog.post2.title">Quines tecnologies poden ajudar als docents el 2025?</h3>
+        <p data-i18n="section.blog.post2.content">Explorem tendències com l’IA, els Chromebooks i les plataformes educatives.</p>
+      </article>
+    </section>
+
+    <section id="equip">+
+      <h2 data-i18n="section.team.title">El nostre equip</h2>
+      <ul>
+        <li><strong>Sonia Puig</strong> – <span data-i18n="section.team.role1">Responsable tècnica</span></li>
+        <li><strong>Montse Soler</strong> – <span data-i18n="section.team.role2">Tècnic especialista Apple</span></li>
+        <li><strong>Lídia Ferrer</strong> – <span data-i18n="section.team.role3">Suport i atenció al client</span></li>
+      </ul>
+    </section>
+
+    <section id="clients">
+      <h2 data-i18n="section.clients.title">Clients i col·laboradors</h2>
+      <p data-i18n="section.clients.content1">Hem treballat amb més de 30 escoles, empreses i fundacions a Catalunya.</p>
+      <p><strong data-i18n="section.clients.content2">Exemples:</strong> Escola El Roure, Fundació Educar, Xarxa TIC Escolar.</p>
+    </section>
+
+    <section id="ofertes">
+      <h2 data-i18n="section.offers.title">Ofertes i Packs</h2>
+      <ul>
+        <li><strong data-i18n="section.offers.item1.title">Pack Manteniment</strong>: <span data-i18n="section.offers.item1.desc">Revisió mensual + Suport remot – <em>150€/mes</em></span></li>
+        <li><strong data-i18n="section.offers.item2.title">Pack Equipament Aula</strong>: <span data-i18n="section.offers.item2.desc">Instal·lació + configuració de 10 ordinadors – <em>Consultar</em></span></li>
+        <li><strong data-i18n="section.offers.item3.title">Auditoria TIC</strong>: <span data-i18n="section.offers.item3.desc">Informe complet de l’estat tecnològic del centre – <em>Gratuït (primer cop)</em></span></li>
+      </ul>
+    </section>
+
+    <section id="contacte">
+      <h2 data-i18n="section.contact.title">Contacte</h2>
+      <p data-i18n="section.contact.content">Vols parlar amb nosaltres? Et responem ràpidament.</p>
+      <form class="formulari-contacte">
+        <input type="text" name="nom" placeholder="Nom" required />
+        <input type="email" name="correu" placeholder="Correu electrònic" required />
+        <textarea name="missatge" rows="4" placeholder="El teu missatge" required></textarea>
+        <button type="submit" data-i18n="section.contact.submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+
+  <script src="i18n.js"></script>
+
+</body>
+</html>
